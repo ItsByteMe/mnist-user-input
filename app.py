@@ -7,9 +7,6 @@ from flask import Flask, render_template,request
 from scipy.misc import imsave, imread, imresize
 import keras.models
 
-
-
-
 sys.path.append(os.path.abspath("./model"))
 from load import *
 app = Flask(__name__, template_folder='template')
@@ -42,4 +39,4 @@ def predict():
 
 if __name__ == "__main__":
 	port = int(os.environ.get('PORT', 5000))
-	app.run(host='127.0.0.1', port=port)
+	app.run(host='192.168.2.242', port=port)
