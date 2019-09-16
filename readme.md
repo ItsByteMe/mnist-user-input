@@ -4,15 +4,9 @@ This is just a basic conv net I made and then integrated into a flask web app wh
 
 ## Dependencies
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all the required libraries.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all the required libraries through the requirements file.
 
 ```bash
-pip install numpy
-pip install keras
-pip install tensorflow
-pip install flask
-pip install pillow
-pip install scipy==1.1.0
-pip install h5py
+pip install -r requirements.txt
 ```
 I am using an older version of scipy here because any newer would not allow us to use the imread, imsave, and imresize functions that are used.
